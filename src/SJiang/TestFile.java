@@ -7,6 +7,6 @@ public class TestFile
 
     public static void main(String[] args)
     {
-        cutOut("for the horde","the");
+        cutOut("for rest alliance ","alliance");
     }
 }
