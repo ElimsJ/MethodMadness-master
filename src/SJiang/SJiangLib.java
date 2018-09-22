@@ -8,5 +8,4 @@ public class SJiangLib
         System.out.println(testWord);
         return testWord;
     }
-    public static String forNumber(String not1, String not2)
 }
