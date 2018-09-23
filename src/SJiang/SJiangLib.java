@@ -51,4 +51,28 @@ public class SJiangLib
         }
     return false;
     }
+    public static int primeNumber(int num)
+    {
+        int x = 0;
+        int i = 0;
+
+        String primeNum ="";
+        for(x =1; x<= num;x++)
+        {
+            int primeCounter = 0;
+            for( i = x; i>=1;i--)
+            {
+                if(i%num==0)
+                {
+                    primeCounter = primeCounter + 1;
+                }
+                if(primeCounter==2)
+                {
+                    primeNum = primeNum + i +"";
+                }
+            }
+        }
+
+
+    }
 }

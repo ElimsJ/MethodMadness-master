@@ -1,8 +1,6 @@
 package SJiang;
 
-import static SJiang.SJiangLib.cutOut;
-import static SJiang.SJiangLib.isFibonnaci;
-import static SJiang.SJiangLib.isPalindrome;
+import static SJiang.SJiangLib.*;
 
 public class TestFile
 {
@@ -12,6 +10,7 @@ public class TestFile
         cutOut("for rest alliance ","alliance");
         isFibonnaci(Integer.parseInt("34"));
         isPalindrome("racecard");
+        primeNumber(Integer.parseInt("8"));
     }
 
 }
