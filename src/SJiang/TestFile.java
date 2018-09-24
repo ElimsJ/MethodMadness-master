@@ -1,6 +1,7 @@
 package SJiang;
 
 import static SJiang.SJiangLib.*;
+import static SJiang.SJiangLib.dateStr;
 
 public class TestFile
 {
@@ -10,7 +11,8 @@ public class TestFile
         cutOut("for rest alliance ","alliance");
         isFibonnaci(Integer.parseInt("34"));
         isPalindrome("racecard");
-        primeNumber(Integer.parseInt("8"));
+        dateStr("03/05/2001");
+        sumUpTo(Integer.parseInt("15"));
     }
 
 }

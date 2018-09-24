@@ -23,7 +23,7 @@ public class SJiangLib
             num2 = num3;
         }
 
-        if(num3 == input)
+        if(num3 == input)//if the input  is one of the fibonnaci numbers
         {
             System.out.println(true);
             return true;
@@ -35,44 +35,41 @@ public class SJiangLib
         return false;
     }
     public static boolean isPalindrome(String word) {
-        int length = word.length();
-        if (length < 2)
+        int length = word.length();//making it easier to use
+        if (length < 2)//if the word is only by it self  it true
         {
             return true;
         }
         else {
             if (word.charAt(0) != word.charAt(length - 1)) {
-                System.out.println(false);
+                System.out.println(false);//if the beginning word does not equal the last word it false;
             }
-            if (word.charAt(0) == word.charAt(length - 1)) {
+            if (word.charAt(0) == word.charAt(length - 1)) {//if the beginning word does not equal the last word it true;
                 System.out.println(true);
                 return true;
             }
         }
     return false;
     }
-    public static int primeNumber(int num)
+    public static String dateStr(String date)//mm/dd-yyyy
     {
-        int x = 0;
-        int i = 0;
-
-        String primeNum ="";
-        for(x =1; x<= num;x++)
+        String day = date.substring(3,5);//the place value of the string for day, making day into string
+        String month = date.substring(0,2);//the place value of the string for month, making month into string
+        String year = date.substring(6, date.length());//the place value of the string for year, making month into string
+        System.out.println(day + "-" + month + "-" + year);
+        return day + "-" + month + "-" + year;//return in the dd-mm-yyyy format
+    }
+    public static int sumUpTo(int numberToSum)
+    {
+        int sum = 0;
+        int timesToAdd = 0;
+        while(timesToAdd<= numberToSum)//when the num is less or equal the the input
         {
-            int primeCounter = 0;
-            for( i = x; i>=1;i--)
-            {
-                if(i%num==0)
-                {
-                    primeCounter = primeCounter + 1;
-                }
-                if(primeCounter==2)
-                {
-                    primeNum = primeNum + i +"";
-                }
-            }
+            sum = sum + timesToAdd;// the sum will be the previous sum + the next integer
+            timesToAdd = timesToAdd +1;
+
         }
-
-
+        System.out.println(sum);//display sum
+        return sum;
     }
 }
